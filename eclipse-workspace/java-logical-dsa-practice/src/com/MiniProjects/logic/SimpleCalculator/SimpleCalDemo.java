@@ -4,9 +4,9 @@ public class SimpleCalDemo {
 	public static void main(String [] args) {
   Scanner sc=new Scanner(System.in);
   System.out.println("Enter  number1:");
-  int userInput1=sc.nextInt();
+  double userInput1=sc.nextDouble();
   System.out.println("Enter  number2:");
-  int userInput2=sc.nextInt();
+  double userInput2=sc.nextDouble();
   System.out.println("choose one operator:");
   System.out.println("1.Addition");
   System.out.println("2.Subtraction");
@@ -16,27 +16,24 @@ public class SimpleCalDemo {
   int operator=sc.nextInt();
  // int result=userInput1+userInput2;
   if(operator==1) {
-	  int result=userInput1+userInput2;
-	  System.out.println(userInput1+"+"+userInput2+"="+result);
-	 
+	  double result=userInput1+userInput2;
+	  System.out.printf("%.0f + %.0f = %.0f%n", userInput1, userInput2, result);
   }
   else if(operator==2) {
-	  int result=userInput1-userInput2;
-	  System.out.println(userInput1+"-"+userInput2+"="+result);
-	  
+	  double result=userInput1-userInput2;
+	  System.out.printf("%.0f + %.0f = %.0f%n", userInput1, userInput2, result);
   }else if(operator==3) {
-	  if(userInput2>0) {
-		  int result=userInput1/userInput2;
-	  System.out.println(userInput1+"/"+userInput2+"="+result);
+	  if(userInput2==0) {
+		  System.out.println("invalid number");  
 	  }else {
-		  System.out.println("invalid number");
+		  double result=userInput1/userInput2;
+		  System.out.println(userInput1+"/"+userInput2+"="+result);
 	  }
   }else if(operator==4) {
-	  int result=userInput1*userInput2;
+	  double result=userInput1*userInput2;
 	  System.out.println(userInput1+"*"+userInput2+"="+result); 
   }else if(operator==5) {
-	  
-	  System.out.println("existing calculator");  
+	 System.out.println("exiting calculator");  
   }
   
 }
