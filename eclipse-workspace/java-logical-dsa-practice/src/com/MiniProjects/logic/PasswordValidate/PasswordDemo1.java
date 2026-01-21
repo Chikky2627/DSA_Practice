@@ -31,16 +31,16 @@ public class PasswordDemo1 {
 			  
 		  }
 	  if(hasUpperCase&&hasLowerCase&&hasDigit&&hasSpecial) {
-		  System.out.println(RED+"password is strong"+RESET);
+		  System.out.println(GREEN+"password is strong"+RESET);
 	  }else {
 		  if(hasUpperCase==false) {
-			  System.out.println("password must include Uppercase");
+			  System.out.println(RED+"password must include Uppercase"+RESET);
 		  }if(hasLowerCase==false) {
-			  System.out.println("password must include lowercase");
+			  System.out.println(RED+"password must include lowercase"+RESET);
 		  }if(hasDigit==false) {
-			  System.out.println("password must include Digit");
+			  System.out.println(RED+"password must include Digit"+RESET);
 		  }if(hasSpecial==false) {
-			  System.out.println("password must include SpecialCharacter");
+			  System.out.println(RED+"password must include SpecialCharacter"+RESET);
 		  }
 		  sc.close();
 	  }
